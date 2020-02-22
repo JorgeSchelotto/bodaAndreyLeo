@@ -16,16 +16,21 @@ var divFamily = document.getElementById('family')
 
 
 if (family) {
-    localStorage.setItem("person", family);
-    var conFamilia = true
+    localStorage.setItem("familia", family);
+    localStorage.setItem("controlFamilia", true);
 }
 
 if (nombre) {
     localStorage.setItem("person", nombre);
+    localStorage.setItem("controlFamilia", false);
 }
 
-if (conFamilia) {
-    var innerInvitado = "Familia " + localStorage.getItem("person");
+
+var controlFamilia = localStorage.getItem("controlFamilia");
+
+//Local storage guarda strings
+if (controlFamilia === "true") {
+    var innerInvitado = "Familia " + localStorage.getItem("familia");
 } else {
     var innerInvitado = localStorage.getItem("person");
 }
