@@ -16,5 +16,5 @@ $header .= "Mime-Version: 1.0 \r\n";
 $header .= "Content-Type: text/plain";
 
 mail($recipient, $subject, $content, $header, utf8_decode($message)) or die("Error!");
-header ("Location: index.html");
+header ("Location: https://casamientoandreayleo.000webhostapp.com/");
 ?>
