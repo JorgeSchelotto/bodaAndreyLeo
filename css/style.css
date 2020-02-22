@@ -5,6 +5,22 @@
   border: none;
 }
 
+.contenedor{
+  position: relative;
+  display: inline-block;
+  text-align: center;
+}
+#family{
+position: absolute;
+top: 2.5%;
+left: 50%;
+transform: translate(-50%, -50%);
+font-size: 2vw;
+font-weight: 1em !important;;
+line-height: 1.5em !important;;
+color: #ffffff !important;
+}
+
 #tittle {
   position: relative;
   color: #fff;
@@ -380,3 +396,6 @@ h2 {
   padding: 0em;
   margin: 0em;
 }
+
+
+
